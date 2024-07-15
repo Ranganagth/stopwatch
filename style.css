@@ -1,0 +1,99 @@
+/* Google fonts import link */
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kode Mono", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #628efc;
+}
+
+.wrapper {
+  user-select: none;
+  text-align: center;
+}
+
+.wrapper .time {
+  height: 100px;
+  background: #bbe6e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+  padding: 0 10px;
+}
+
+.wrapper .time span {
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #084b83;
+}
+
+.time span.colon {
+  width: 10px;
+}
+
+.time span.ms-colon,
+.time span.millisecond {
+  color: #42bfdd;
+}
+
+.wrapper .buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  color: #42bfdd;
+  background: #ffeedb;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+}
+
+.buttons button.active,
+.buttons button.stopActive {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.laps {
+  margin-top: 20px;
+  background: #bbe6e4;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+}
+
+.laps h2 {
+  font-size: 24px;
+  color: #084b83;
+}
+
+.lap-list {
+  list-style: none;
+  padding: 0;
+}
+
+.lap-list li {
+  font-size: 18px;
+  color: #d00000;
+  padding: 5px 0;
+}
